@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BottomSheetDialogTheme"
+    android:orientation="vertical"
+    tools:context=".ui.book.BookDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="26dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/ivbookD"
+                    android:layout_width="130dp"
+                    android:layout_height="160dp"
+                    android:layout_margin="13dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvTitle1D"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:padding="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/bigblue"
+                        android:textSize="19sp"
+                        android:fontFamily="@font/psbold"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPageCountD0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Número de páginas:"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/psbold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPageCountD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:padding="4dp"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/psbold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPublishDateD0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Ano de publicação:"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/psbold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvPublishDateD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="YYYY"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/psbold"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPreviewD"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/design_default_color_primary_dark"
+            android:text="VER NO GOOGLE BOOKS"
+            android:fontFamily="@font/psbold"
+            android:background="@drawable/loginbtndesign"
+            android:textAllCaps="false"
+            android:textColor="@color/buttonColor"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline6" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvTitle2D"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="4dp"
+                    android:fontFamily="@font/psbold"
+                    android:text="Título:"
+                    android:textColor="@color/bigblue"
+                    android:textSize="19sp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCategoriesD0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Categoria:"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/psbold"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvCategoriesD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:maxLines="2"
+                        android:text="------------"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/psbold"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvAuthorsD"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="Autor(es):"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/psbold"
+                        />
+                    <TextView
+                        android:id="@+id/tvAuthorsD0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        android:text="J.K. Rowlling"
+                        android:maxLines="2"
+                        android:textColor="@color/bigblue"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/psbold"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvDescriptionD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/bigblue"
+                    android:layout_marginBottom="20dp"
+                    android:padding="4dp"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/psbold"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

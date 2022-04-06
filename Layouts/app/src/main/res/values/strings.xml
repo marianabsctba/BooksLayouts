@@ -1,0 +1,45 @@
+<resources>
+    <string name="or">Or</string>
+    <string name="remember_me">lembre de mim</string>
+    <string name="create_an_account">Registre-se</string>
+    <string name="number_of_pages">paginas:</string>
+    <string name="app_name">BooksLayouts</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="logo_text">""</string>
+    <string name="name_sign">Nome</string>
+    <string name="login_btn">login</string>
+    <string name="preview">Visualizar</string>
+    <string name="title">Titulo:</string>
+    <string name="category">Categoria:</string>
+    <string name="not_specified">sem especificacao</string>
+    <string name="publish_date">data de publicacao</string>
+    <string name="email_sign">E-Mail</string>
+    <string name="i_already_have_an_account">Eu ja tenho uma conta</string>
+    <string name="password_sign">senha</string>
+    <string name="signup_btn">signup</string>
+    <string name="author">autor:</string>
+    <string name="unknown">Unknown</string>
+    <string name="dark_mood">Modo noturno</string>
+    <string name="sign_out">deslogar</string>
+    <string name="your_information">Informacoes pessoais</string>
+    <string name="invalid_email">oppsss.. e-mail invalido</string>
+    <string name="welcome">bem-vindo(a)</string>
+    <string name="try_again">tente novamente</string>
+    <string name="registered_successfully">registrado com sucesso</string>
+    <string name="no_description">no description for this book</string>
+    <string name="search">Pesquise aqui e veja a lista…</string>
+    <string name="signup">SignUp</string>
+    <string name="settings">opcoes</string>
+    <string name="forget_password">esqueceu a senha?</string>
+    <string name="reset">criar nova senha (e-mail)</string>
+    <string name="log_in">Log In</string>
+    <string name="registration">registro</string>
+    <string name="home">Home</string>
+    <string name="favorite">Livros favoritos</string>
+    <string name="please_enter_your_email">digite seu email</string>
+    <string name="arrow_back">voltar</string>
+    <string name="please_enter_email">digite seu email</string>
+    <string name="please_enter_password">digite a sua senha</string>
+    <string name="you_didn_t_add_to_favorite">Voce ainda nao favoritou livros</string>
+    <string name="like_border">linha de borda</string>
+</resources>

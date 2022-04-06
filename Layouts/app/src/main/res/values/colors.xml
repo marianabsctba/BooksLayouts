@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#0D0E0F</color>
+    <color name="white">#C0C2CF</color>
+    <color name="baisic">#D6D9E6</color>
+    <color name="offwhite">#CFD1DF</color>
+    <color name="StrokeColor">#716561</color>
+    <color name="orang">#3F51B5</color>
+    <color name="buttonColor">#3F51B5</color>
+    <color name="bigblue">#262C4E</color>
+
+    <color name="darkRed">#2196F3</color>
+    <color name="green">#9C27B0</color>
+    <color name="darkOrang">#3F51B5</color>
+</resources>

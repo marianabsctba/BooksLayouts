@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.authentication.LoginFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etSignInEmailLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:boxStrokeColor="@color/StrokeColor"
+        app:hintTextColor="@color/StrokeColor"
+        android:fontFamily="@font/psbold"
+        android:hint="e-mail"
+        app:endIconMode="clear_text"
+        app:helperTextTextColor="#3F51B5"
+
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        app:startIconDrawable="@drawable/ic_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_passwordLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        app:boxStrokeColor="@color/StrokeColor"
+        android:fontFamily="@font/psbold"
+        app:hintTextColor="@color/StrokeColor"
+        android:hint="senha"
+        app:endIconMode="password_toggle"
+        app:helperTextTextColor="#3F51B5"
+
+        app:layout_constraintTop_toBottomOf="@+id/etSignInEmailLayout"
+        app:startIconDrawable="@drawable/ic_lock">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="0dp"
+        android:layout_height="11dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/psbold"
+        android:text="Registre-se aqui"
+        android:textSize="18sp"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_sign_up1"
+        app:layout_constraintTop_toTopOf="@+id/tv_sign_up1" />
+
+    <TextView
+        android:id="@+id/tv_sign_up1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/psbold"
+        android:text="Ainda não tem uma conta?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <Button
+
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/loginbtndesign"
+        android:fontFamily="@font/psbold"
+        android:text="LOGIN"
+        android:layout_marginTop="75dp"
+        android:textColor="@color/offwhite"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_passwordLayout" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="62dp"
+        android:layout_height="128dp"
+        android:bottomLeftRadius="10dp"
+        android:src="@drawable/img_3"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.643"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84" />
+
+    <TextView
+        android:layout_width="151dp"
+        android:layout_height="77dp"
+        android:text="LOGIN"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="30sp"
+        android:fontFamily="@font/psbold"
+        app:layout_constraintBottom_toTopOf="@+id/etSignInEmailLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.799"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <CheckBox
+        android:id="@+id/checkBox_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="@+id/et_passwordLayout"
+        app:layout_constraintTop_toBottomOf="@+id/et_passwordLayout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lembrar de mim"
+        android:fontFamily="@font/psbold"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox_remember"
+        app:layout_constraintStart_toEndOf="@+id/checkBox_remember"
+        app:layout_constraintTop_toTopOf="@+id/checkBox_remember" />
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha? Clique aqui"
+        android:fontFamily="@font/psbold"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_passwordLayout"
+        app:layout_constraintTop_toBottomOf="@+id/et_passwordLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>
